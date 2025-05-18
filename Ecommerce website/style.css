@@ -1,0 +1,529 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* ***HEADER SECTION*****/
+#header{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    color: black;
+      background-color:#f2f5ff;  
+      /* background-color:#e3e6f3; */
+       
+    box-shadow: 0 3px 30px rgba(0,0,0,01);
+     z-index: 999; 
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 80px;
+}
+.header-logo img{
+
+   width: 150px;
+   height: auto;
+    /* margin-top: -px;  */
+}  
+.header-navbar ul li{
+    display: inline;
+    padding: 50px;
+    font-size: large;
+}
+.header-navbar ul li a{   
+ text-decoration: none;
+font-family: fantasy;
+position: relative;
+ /* font-weight: 100px; */
+}
+.header-navbar  a:hover,
+.header-navbar  a.active{
+color: green;
+ content: ""; 
+}
+
+ .header-navbar ul li a:hover::after,
+.header-navbar ul li a:active::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    bottom: -4px;
+    left: 5px;
+}  
+.header-icon{ 
+    margin: 60px;
+}
+.header-icon a:hover{
+    color: green;
+}
+
+/* ****MAIN SECTION**** */
+ #hero-section{
+    /* background-image: url(Images/freepik__upload__56987.png); */
+    background-image: url(Images/hero4.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+     background-size: cover; 
+     display: flex;  
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    padding: 0 80px;
+} 
+.hero-content h6{
+padding-bottom: 6px;
+font-size: 15px;
+}
+
+.hero-content h1{
+padding-bottom: 6px;
+font-size: 30px;
+/* color: rgb(234, 177, 71); */
+}
+
+.hero-content h2{
+padding-bottom: 6px;
+font-size:35px;
+}
+.hero-content p{
+    padding-bottom:10px;
+    }
+.hero-btn{
+    display: inline-block;
+            background: #f5e4d1; 
+            color: #236f57; 
+            padding: 10px 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+            cursor: pointer;
+            position: relative;
+            font-weight: bold;
+}
+.hero-btn::before {
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     /* background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');  */
+    opacity: 0.3;
+    z-index: -1;
+}
+.hero-btn:hover {
+    background: #e7d3b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* ****FEATURES SECTION**** */
+#features{
+    display: flex;
+    /* flex-direction: row;  */
+    align-items: center;
+    /* justify-content: center; */
+     justify-content:flex-start; 
+    /* flex-wrap: nowrap;
+    width: 100%; */
+}
+#features .f-box{
+    width:auto;
+    text-align: center;
+    padding:10px;
+    border: 1px solid #cce7d0;
+    /* margin:25px 0; */
+    margin: 40px ;
+    box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+ #features .f-box img {
+    width: 100%;
+    max-width:150px; 
+    height: 150px;; 
+    display: block;
+    margin: 20px;
+} 
+#features .f-box  h6{
+    display: inline-block;
+    font-size: 14px;
+    padding: 9px 8px 6px 8px;
+    color:#088178;
+    margin: 0;
+    background-color:pink;
+    border-radius: 15px;
+}
+
+/****Product-section*** */
+.product-container .product-collections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 0;
+}
+.product-container h1,p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product-container .product-cart{
+    width: 350px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    border: 1px solid #ebebeb;
+    box-shadow: 20px 20px 30px rgba(0,0,0, 0.2);
+    /* transition:box-shadow 0.2s; */
+}
+.product-container .product-cart img{
+    width: 100%;
+    border-radius: 25px;
+}
+.product-container .product-cart span{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #969696;
+    font-size: 21px;
+}
+.product-container .product-cart h4{
+    font-size: 17px;
+    color: rgb(41,41,41);
+    padding: 4px;
+}
+.product-container .product-cart .price{
+    color: #088178
+}
+
+.product-container .product-cart .stars{
+    color:#e6ae2c;
+}
+.product-container .product-cart  .buy-icon{
+    border-radius: 50px;
+    right: 10px;
+    bottom: 20px;
+    position: absolute;
+    color: #088178;
+}
+/* ****banner section**** */
+#flex-banner{
+    background-image: url(Images/b2.jpg);
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#flex-banner h4{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#flex-banner h3{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#flex-banner .explor-btn{
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 140px;
+}
+
+/* ***sale banner** */
+#sale-banner{   
+    margin: 0 60px;  
+}
+
+#sale-banner h2,h4,span{
+    color: rgb(248,248,248);
+}
+#sale-banner .big-banners{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+#sale-banner .big-banners div{
+    /* min-width:500px; */
+    width: 500px;
+    height: 300px;
+    margin: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    backdrop-filter: blur(8%);
+    padding: 20px;
+}
+#sale-banner .big-banner1{
+    background-image: url(Images/b17.jpg);
+}
+
+#sale-banner .big-banner2{
+    background-image: url(Images/b10.jpg);
+}
+#sale-banner .small-banner1{
+background-image: url(Images/b7.jpg);
+}
+#sale-banner .small-banner2{
+background-image: url(Images/b18.jpg);
+}
+#sale-banner .small-banner3{
+background-image: url(Images/b4.jpg);
+}
+#sale-banner .big-banners button{
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 12px;
+}
+#sale-banner .big-banners div:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+#sale-banner .small-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sale-banner .small-banner div{
+    display: flex;
+    width:400px;
+    height: 200px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 25px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px;
+}
+#sale-banner .small-banner h2{
+    font-size: 25px;
+}
+#sale-banner .small-banner h5{
+    color:#771818;
+}
+/* ***sign up section*** */
+#sign-up {
+    background-image: url(Images/b14.png);
+    background-color:#36066a;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0 20px;
+
+}
+#sign-up  h3{
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    margin-left: 170px;
+}
+#sign-up h5,span{
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+#sign-up .sign .form input {
+   justify-content: center;
+align-items: center;
+padding:12px;
+border-radius: 10px;
+width:70%;
+margin-left: 50px;
+}
+#sign-up .sign .form button{
+    padding: 12px;
+    background-color: #236f57;
+    color: white;
+    border-radius: 10px;
+}
+/* ****footer section*** */
+
+#footer-section {
+    background-color: #f9f9f9; 
+    padding: 40px 50px;
+}
+
+#footer-section .footer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: nowrap; 
+    gap: 20px; 
+}
+
+/* Individual Section Styling */
+#footer-section .footer > div {
+    flex: 1; 
+    min-width: 200px; 
+    text-align: left; 
+}
+
+/* Contact Section */
+#footer-section .contact {
+    width: 100%;
+}
+
+#footer-section .contact img {
+    width: 80%;
+    height: 100%;
+ 
+}
+
+#footer-section .contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#footer-section .contact p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.7;
+   
+}
+
+#footer-section .socials {
+    margin-top: 15px;
+}
+
+#footer-section .socials a {
+    margin: 0 8px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+#footer-section .socials a:hover {
+    color: #007bff;
+}
+
+/* About Section */
+#footer-section .about {
+    text-align: left;
+}
+
+#footer-section .about h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#footer-section .about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-section .about ul li {
+    margin-bottom: 8px;
+}
+
+#footer-section .about ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#footer-section .about ul li a:hover {
+    color: #007bff;
+}
+
+/* My Account Section */
+#footer-section .my-account {
+    text-align: left;
+}
+
+#footer-section .my-account h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#footer-section .my-account a {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#footer-section .my-account a:hover {
+    color: #007bff;
+}
+
+/* Install App Section */
+#footer-section .installapp {
+    text-align: left;
+}
+
+#footer-section .installapp h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left:40px ;
+}
+
+#footer-section .installapp p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+
+#footer-section .installapp .payment img {
+    width: 120px;
+    margin: 5px;
+    margin-left: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+#footer-section .installapp img {
+    margin-top: 10px;
+    width: 180px;
+    margin-left: 60px;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #footer-section .footer {
+        flex-direction: column; 
+        text-align: center;
+        align-items: center;
+    }
+
+    #footer-section .footer > div {
+        margin-bottom: 20px;
+    }
+
+    #footer-section .contact img {
+        margin: 0 auto;
+    }
+
+    #footer-section .installapp .payment img {
+        width: 100px;
+    }
+}
